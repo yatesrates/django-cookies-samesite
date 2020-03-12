@@ -55,7 +55,7 @@ class CookiesSameSite(MiddlewareMixin):
 
         samesite_flag = getattr(
             settings,
-            'SESSION_COOKIE_SAMESITE',
+            'DJANGO_SESSION_COOKIE_SAMESITE',
             None
         )
 
